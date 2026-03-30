@@ -1,7 +1,12 @@
 // file Handling in backend
 const http = require('http');
-const fs = require('fs');
+const fs = require('fs');    
 const path = require('path');
+
+// path → finds correct file location
+// fs → reads the file
+// res.write → sends it to browser
+// __dirname → current folder
 
 const server = http.createServer((req, res) => {
 
