@@ -1,6 +1,8 @@
+// Middleware in Express
 const express = require('express');
 const app = express();
 
+// Middleware
 app.use((req, res, next) => {
     console.log('middleware is running');
     next();
