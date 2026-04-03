@@ -15,7 +15,7 @@ app.get('/product/:id', (req, res) => {
 });
 
 
-// Query Params - is used for kind of filetering or searching
+// Query Params - is used for kind of filtering or searching
 app.get('/search', (req, res) => {
     const keyword = req.query.q;
     res.send(`You searched for ${keyword}`);
